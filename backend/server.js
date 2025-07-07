@@ -9,7 +9,13 @@ require("dotenv").config(); // 🔥 Indispensable !
 require("./config/passport")(passport);
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 app.use(
   session({
@@ -29,6 +35,7 @@ mongoose
 
 app.use("/auth", authRoutes);
 const apiRoutes = require("./routes/api");
+console.log("🔗 API routes loaded");
 app.use("/api", apiRoutes);
 
 app.listen(5000, () =>

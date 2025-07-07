@@ -1,12 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// src/pages/Home.js
+import React from "react";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
-    <div className="page">
-      <h1>Bienvenue sur Codex Arcana</h1>
-      <Link to="/login">Se connecter</Link> | <Link to="/register">Créer un compte</Link> | <Link to="/game">Jouer</Link>
-    </div>
+    <>
+      <Navbar />
+      <div>
+        <h1>Bienvenue dans Codex Arcana</h1>
+        <p>Ici commence ta légende !</p>
+      </div>
+    </>
   );
 };
 
