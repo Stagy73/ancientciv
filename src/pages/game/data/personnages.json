@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Enki – Le Bioarchitecte",
+    "image": null,
+    "description": "Créateur de l’homme, protecteur des rebelles.",
+    "stats": {
+      "influence": 4,
+      "conscience": 5,
+      "origine": "Anunnaki"
+    },
+    "power": "Génie génétique – Transforme un ADN simien en ADN hybride."
+  },
+  {
+    "name": "Enlil – Le Purificateur",
+    "image": null,
+    "description": "Ennemi de l’humanité, veut la purifier par le chaos.",
+    "stats": {
+      "influence": 6,
+      "conscience": 2,
+      "origine": "Anunnaki"
+    },
+    "power": "Purge – Détruit un hybride par tour."
+  },
+  {
+    "name": "Marduk – Le Dominant",
+    "image": null,
+    "description": "Celui qui voulait être dieu parmi les hommes.",
+    "stats": {
+      "influence": 6,
+      "conscience": 2,
+      "origine": "Anunnaki rebelle"
+    },
+    "power": "Domination – Bonus contre les hybrides simiens."
+  },
+  {
+    "name": "Ninhursag – La Matrice",
+    "image": null,
+    "description": "Déesse mère, créatrice des corps.",
+    "stats": {
+      "influence": 2,
+      "conscience": 6,
+      "origine": "Anunnaki"
+    },
+    "power": "Soin total une fois par partie."
+  },
+  {
+    "name": "Ninurta – Le Chasseur céleste",
+    "image": null,
+    "description": "Traqueur des hybrides déviants.",
+    "stats": {
+      "influence": 5,
+      "conscience": 3,
+      "origine": "Anunnaki"
+    },
+    "power": "Marquage – Toute cible marquée subit +1 dégât."
+  },
+  {
+    "name": "Utu – L’œil radiant",
+    "image": null,
+    "description": "Juge universel, voit à travers les âmes.",
+    "stats": {
+      "influence": 4,
+      "conscience": 5,
+      "origine": "Anunnaki loyal"
+    },
+    "power": "Révélation – Voit toutes les cartes adverses."
+  },
+  {
+    "name": "Ishtar – La Porte d’Or",
+    "image": null,
+    "description": "Séduit, inspire et désoriente.",
+    "stats": {
+      "influence": 5,
+      "conscience": 4,
+      "origine": "Anunnaki rebelle"
+    },
+    "power": "Manipulation – Prend le contrôle d’une carte ennemie."
+  },
+  {
+    "name": "Thoth – Le Transcripteur",
+    "image": null,
+    "description": "Gardien des vérités anciennes.",
+    "stats": {
+      "influence": 3,
+      "conscience": 6,
+      "origine": "Atlante"
+    },
+    "power": "Mémoire – Accès à toute carte détruite."
+  },
+  {
+    "name": "Lilith – Mère des Nephilim",
+    "image": null,
+    "description": "Première femme libre et puissante.",
+    "stats": {
+      "influence": 5,
+      "conscience": 5,
+      "origine": "Hybride"
+    },
+    "power": "Éveil – Réactive une carte dormante."
+  },
+  {
+    "name": "Anu – Le Trône Silencieux",
+    "image": null,
+    "description": "Maître suprême des Anunnaki.",
+    "stats": {
+      "influence": 7,
+      "conscience": 4,
+      "origine": "Anunnaki"
+    },
+    "power": "Ordre divin – Réinitialise la partie à zéro."
+  },
+  {
+    "name": "Dagon – Le Marcheur des Abysses",
+    "image": null,
+    "description": "Reptilien oublié des profondeurs atlantes.",
+    "stats": {
+      "influence": 4,
+      "conscience": 4,
+      "origine": "Reptilien"
+    },
+    "power": "Invocation – Invoque un rejeton des abysses."
+  },
+  {
+    "name": "Tiamat – La Colère originelle",
+    "image": null,
+    "description": "Mère reptilienne de la planète.",
+    "stats": {
+      "influence": 6,
+      "conscience": 3,
+      "origine": "Reptilien"
+    },
+    "power": "Cataclysme – Inflige 2 dégâts à tous."
+  },
+  {
+    "name": "Apep – Le Serpent d’ombre",
+    "image": null,
+    "description": "Essence du chaos originel.",
+    "stats": {
+      "influence": 5,
+      "conscience": 2,
+      "origine": "Reptilien astral"
+    },
+    "power": "Chaos – Fait perdre 1 carte au hasard à tous."
+  },
+  {
+    "name": "Lacerta – La Mémoire profonde",
+    "image": null,
+    "description": "Survivante reptilienne, détentrice du savoir caché.",
+    "stats": {
+      "influence": 3,
+      "conscience": 6,
+      "origine": "Reptilien"
+    },
+    "power": "Télépathie – Accède à la main de tout joueur."
+  },
+  {
+    "name": "Zisudra – L’Éveillé",
+    "image": null,
+    "description": "Ancien hybride immortel.",
+    "stats": {
+      "influence": 4,
+      "conscience": 5,
+      "origine": "Hybride"
+    },
+    "power": "Résurrection – Rejoue une carte éliminée."
+  }
+]

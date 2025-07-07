@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Seth – Seigneur du Chaos",
+    "description": "Maître des tempêtes, Seth sème la discorde dans les rangs ennemis.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 2,
+      "origine": "Reptilien"
+    },
+    "power": "Tempête mentale – Confusion des cartes ennemies pendant 1 tour."
+  },
+  {
+    "name": "Nehak – L’Ombre Rampante",
+    "description": "Espion insaisissable, Nehak récolte des secrets vitaux.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 5,
+      "origine": "Reptilien"
+    },
+    "power": "Camouflage – Ignore toute attaque pendant 1 tour."
+  },
+  {
+    "name": "Ksar – Le Stratège Froid",
+    "description": "Commandant reptilien, expert des mouvements dissimulés.",
+    "image": null,
+    "stats": {
+      "influence": 5,
+      "conscience": 2,
+      "origine": "Reptilien"
+    },
+    "power": "Tactique glacée – Réduit l'influence ennemie de moitié."
+  },
+  {
+    "name": "Rithor – Le Mutagène",
+    "description": "Maître généticien reptilien, modifie les lignées humaines.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 4,
+      "origine": "Reptilien"
+    },
+    "power": "Altération ADN – Change l’origine d’un personnage adverse."
+  },
+  {
+    "name": "Vek’Lar – L’Ancien",
+    "description": "Gardien de la mémoire reptilienne millénaire.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 6,
+      "origine": "Reptilien"
+    },
+    "power": "Souvenir Primordial – Permet de rejouer une carte du cimetière."
+  },
+  {
+    "name": "Dronak – Le Fouisseur",
+    "description": "Maître des souterrains, il surgit des profondeurs.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 4,
+      "origine": "Reptilien"
+    },
+    "power": "Tunnel secret – Permet d’ignorer un obstacle ou effet de terrain."
+  },
+  {
+    "name": "Zhaal – Le Cogneur",
+    "description": "Brute de la caste guerrière reptilienne.",
+    "image": null,
+    "stats": {
+      "influence": 6,
+      "conscience": 1,
+      "origine": "Reptilien"
+    },
+    "power": "Rage Saurienne – Double son influence pendant 1 tour."
+  },
+  {
+    "name": "Lah’Zar – L’Empathique",
+    "description": "Un reptilien rare doté d’émotions profondes.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 6,
+      "origine": "Reptilien"
+    },
+    "power": "Connexion émotionnelle – Copie la conscience d’une autre carte."
+  },
+  {
+    "name": "Gorath – L’Écorcheur",
+    "description": "Interrogateur sadique, son nom fait trembler les espions.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 3,
+      "origine": "Reptilien"
+    },
+    "power": "Extraction – Révèle la carte secrète de l’adversaire."
+  },
+  {
+    "name": "Uxar – L’Érudit Froid",
+    "description": "Scientifique en chef des anciens laboratoires reptiliens.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 5,
+      "origine": "Reptilien"
+    },
+    "power": "Analyse génétique – Annule l’effet d’une carte adverse hybride."
+  },
+  {
+    "name": "Zirak – Le Porte-Parole",
+    "description": "Maître orateur dans les conseils occultes.",
+    "image": null,
+    "stats": {
+      "influence": 5,
+      "conscience": 3,
+      "origine": "Reptilien"
+    },
+    "power": "Discours hypnotique – Empêche une carte ennemie d'agir 1 tour."
+  },
+  {
+    "name": "Tha’Zin – Le Bio-Ingénieur",
+    "description": "Créateur d’armes biologiques anciennes.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 4,
+      "origine": "Reptilien"
+    },
+    "power": "Souche alpha – Infecte une carte ennemie, affaiblissement continu."
+  },
+  {
+    "name": "Yel’Kar – Le Prédicateur",
+    "description": "Prophète des écailles, porteur d’une vision sombre du futur.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 6,
+      "origine": "Reptilien"
+    },
+    "power": "Vision future – Montre les 3 prochaines cartes du deck."
+  },
+  {
+    "name": "Ithak – Le Profanateur",
+    "description": "Déterreur de ruines anunnaki, voleur de technologies.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 2,
+      "origine": "Reptilien"
+    },
+    "power": "Vol de relique – Vole un artefact de l’ennemi."
+  },
+  {
+    "name": "Shurak – Le Marcheur du Feu",
+    "description": "Guerrier spirituel, lié aux anciens volcans sacrés.",
+    "image": null,
+    "stats": {
+      "influence": 5,
+      "conscience": 2,
+      "origine": "Reptilien"
+    },
+    "power": "Flamme primordiale – Détruit une carte ennemie au hasard."
+  },
+  {
+    "name": "Xeraz – L’Infiltré",
+    "description": "Maître du déguisement, infiltré chez les humains.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 5,
+      "origine": "Reptilien"
+    },
+    "power": "Mimétisme – Se fait passer pour une autre carte."
+  },
+  {
+    "name": "Trekh – Le Gardien",
+    "description": "Protecteur des sanctuaires secrets reptiliens.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 3,
+      "origine": "Reptilien"
+    },
+    "power": "Bouclier ancestral – Réduit les dégâts reçus de moitié."
+  },
+  {
+    "name": "Kora’Th – Le Veilleur",
+    "description": "Sentinelle éternelle, ne dort jamais.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 4,
+      "origine": "Reptilien"
+    },
+    "power": "Veille absolue – Révèle toute carte cachée."
+  },
+  {
+    "name": "Zaneth – L’Alpha",
+    "description": "Chef de clan, imposant et charismatique.",
+    "image": null,
+    "stats": {
+      "influence": 6,
+      "conscience": 3,
+      "origine": "Reptilien"
+    },
+    "power": "Commandement – Tous les reptiliens gagnent +1 influence."
+  },
+  {
+    "name": "Omek – Le Silencieux",
+    "description": "Tueur furtif, silencieux comme la mort.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 4,
+      "origine": "Reptilien"
+    },
+    "power": "Assassinat – Élimine une carte de conscience < 3."
+  }
+]

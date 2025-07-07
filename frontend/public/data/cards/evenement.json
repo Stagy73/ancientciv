@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Éclipse de Nibiru",
+    "description": "Plonge le champ de bataille dans l'obscurité cosmique.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 0, "origine": "Événement" },
+    "power": "Stase – Interrompt tous les pouvoirs pendant un tour."
+  },
+  {
+    "name": "Jugement des Nephilim",
+    "description": "Les fautes hybrides sont révélées.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 0, "origine": "Événement" },
+    "power": "Purge – Élimine les hybrides à conscience < 4."
+  },
+  {
+    "name": "Activation du Grand Sceau",
+    "description": "Bloque temporairement toute forme d’évolution.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 0, "origine": "Événement" },
+    "power": "Scellement – Personne ne peut jouer de carte pendant un tour."
+  },
+  {
+    "name": "Rappel de l’Ancienne Loi",
+    "description": "Les anciens protocoles se réactivent.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 1, "origine": "Événement" },
+    "power": "Retour aux origines – Tous reprennent leur origine initiale."
+  },
+  {
+    "name": "Collision de Lignées",
+    "description": "Les lignées s’opposent dans une lutte invisible.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 1, "origine": "Événement" },
+    "power": "Conflit génétique – Réduit toutes les stats de 1 tour."
+  },
+  {
+    "name": "Catastrophe Solaire",
+    "description": "Le soleil envoie une onde destructrice.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 0, "origine": "Événement" },
+    "power": "Impact – Tous perdent 1 point d’influence."
+  },
+  {
+    "name": "Réveil Atlante",
+    "description": "L’Atlantide se manifeste à nouveau.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 2, "origine": "Événement" },
+    "power": "Ancien soutien – Réinvoque un artefact détruit."
+  },
+  {
+    "name": "Faille Temporelle",
+    "description": "Le temps s'effondre brièvement.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 0, "origine": "Événement" },
+    "power": "Rewind – Annule les effets du dernier tour."
+  },
+  {
+    "name": "Chute des Murs d'Orion",
+    "description": "Les frontières stellaires s'effondrent.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 0, "origine": "Événement" },
+    "power": "Invasion – Un joueur pioche 2 cartes d'une autre origine."
+  },
+  {
+    "name": "Sacrifice rituel",
+    "description": "Un sang ancien est versé.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 1, "origine": "Événement" },
+    "power": "Lien de sang – Donne +2 conscience à un allié."
+  },
+  {
+    "name": "Retour des Anciens",
+    "description": "Les fondateurs observent.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 1, "origine": "Événement" },
+    "power": "Supervision – Tous les pouvoirs sont doublés pendant un tour."
+  },
+  {
+    "name": "Rupture de la Trame",
+    "description": "Le tissu de la réalité se déchire.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 0, "origine": "Événement" },
+    "power": "Chaos – Une carte au hasard est détruite dans chaque main."
+  },
+  {
+    "name": "Saut dimensionnel",
+    "description": "Un portail s'ouvre vers une autre réalité.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Événement" },
+    "power": "Déplacement – Permute ta main avec un autre joueur."
+  },
+  {
+    "name": "Silence astral",
+    "description": "Aucune transmission n’est possible.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 1, "origine": "Événement" },
+    "power": "Mute – Aucun pouvoir ne peut être activé ce tour."
+  },
+  {
+    "name": "Soulèvement des Hybrides",
+    "description": "Les enfants rebelles se dressent.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 2, "origine": "Événement" },
+    "power": "Insurrection – Les hybrides gagnent +1 influence."
+  },
+  {
+    "name": "Équilibre rompu",
+    "description": "L'ordre ancien est bouleversé.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 0, "origine": "Événement" },
+    "power": "Déséquilibre – Toutes les stats sont inversées ce tour."
+  },
+  {
+    "name": "Appel des Profondeurs",
+    "description": "Les abysses parlent aux anciens.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Événement" },
+    "power": "Réveil – Une carte reptilienne revient du néant."
+  },
+  {
+    "name": "Voix du Codex",
+    "description": "Un murmure guide le futur.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 1, "origine": "Événement" },
+    "power": "Vision – Le joueur voit les 3 prochains événements."
+  },
+  {
+    "name": "Tempête quantique",
+    "description": "Réalité et illusion se confondent.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 1, "origine": "Événement" },
+    "power": "Distorsion – Permute les cartes visibles."
+  },
+  {
+    "name": "Fin du Cycle",
+    "description": "Le temps se ferme, une ère s’achève.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 0, "origine": "Événement" },
+    "power": "Tabula rasa – Toutes les mains sont défaussées et piochées à nouveau."
+  }
+]

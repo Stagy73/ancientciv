@@ -1,0 +1,222 @@
+[
+  {
+    "name": "L’Arche d’Anu",
+    "description": "Un artefact légendaire contenant les lois cosmiques de l’univers.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 5,
+      "origine": "artefact"
+    },
+    "power": "Révélation – Révèle toutes les cartes cachées."
+  },
+  {
+    "name": "Le Sceau de Ningishzidda",
+    "description": "Un médaillon serpenté qui contrôle les portes interdimensionnelles.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 2,
+      "origine": "artefact"
+    },
+    "power": "Ouverture – Active un portail vers une autre réalité."
+  },
+  {
+    "name": "Tablette d’émeraude",
+    "description": "Transmet les secrets de l’alchimie divine.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 5,
+      "origine": "artefact"
+    },
+    "power": "Transmutation – Change un artefact en pouvoir."
+  },
+  {
+    "name": "Cristal de Mu",
+    "description": "Résidu d’un ancien continent, amplifie les capacités mentales.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 4,
+      "origine": "artefact"
+    },
+    "power": "Amplification – Double l'effet d’un pouvoir."
+  },
+  {
+    "name": "Anneau d’Enlil",
+    "description": "Permet de dominer les esprits faibles.",
+    "image": null,
+    "stats": {
+      "influence": 5,
+      "conscience": 1,
+      "origine": "artefact"
+    },
+    "power": "Soumission – Prend le contrôle d’un personnage ennemi."
+  },
+  {
+    "name": "Œil d’Isis",
+    "description": "L’ancien œil d’Horus gardé dans un artefact féminin sacré.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 4,
+      "origine": "artefact"
+    },
+    "power": "Clarté – Permet de voir l’avenir d’une main."
+  },
+  {
+    "name": "Trident d’Abzu",
+    "description": "Outil de domination marine utilisé par les premiers dieux aquatiques.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 2,
+      "origine": "artefact"
+    },
+    "power": "Submersion – Inonde et neutralise deux cartes ennemies."
+  },
+  {
+    "name": "Couronne de Sumer",
+    "description": "Offerte au roi-prêtre par les Anunnaki.",
+    "image": null,
+    "stats": {
+      "influence": 5,
+      "conscience": 3,
+      "origine": "artefact"
+    },
+    "power": "Légitimité – Ajoute 2 points à tous les personnages alliés."
+  },
+  {
+    "name": "Bâton de Thot",
+    "description": "Maître du savoir et de l’écriture, ce bâton donne autorité.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 5,
+      "origine": "artefact"
+    },
+    "power": "Inspiration – Permet de tirer 2 cartes supplémentaires."
+  },
+  {
+    "name": "Talisman de Lilith",
+    "description": "Protège contre les manipulations mentales.",
+    "image": null,
+    "stats": {
+      "influence": 1,
+      "conscience": 5,
+      "origine": "artefact"
+    },
+    "power": "Immunité – Annule une attaque psychique."
+  },
+  {
+    "name": "Boîte de Ninhursag",
+    "description": "Contient des graines génétiques originelles.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 4,
+      "origine": "artefact"
+    },
+    "power": "Éveil – Réveille un personnage endormi."
+  },
+  {
+    "name": "Rouage d’Ekhnaton",
+    "description": "Un fragment technologique Atlante fonctionnant toujours.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 3,
+      "origine": "artefact"
+    },
+    "power": "Technognose – Sabote une technologie adverse."
+  },
+  {
+    "name": "Médaillon de Sirius",
+    "description": "Reçoit les ondes d’une ancienne civilisation stellaire.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 3,
+      "origine": "artefact"
+    },
+    "power": "Canalisation – Active un pouvoir en veille."
+  },
+  {
+    "name": "Fragment de Zep Tepi",
+    "description": "Un éclat du premier âge égyptien, contenant un pouvoir latent.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 4,
+      "origine": "artefact"
+    },
+    "power": "Réminiscence – Restaure un artefact détruit."
+  },
+  {
+    "name": "Tapis d’Enki",
+    "description": "Volant dans les airs, permet des déplacements stratégiques.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 3,
+      "origine": "artefact"
+    },
+    "power": "Mobilité – Déplace une carte alliée dans une autre zone."
+  },
+  {
+    "name": "Graal Noir",
+    "description": "Contient la mémoire du sang reptilien originel.",
+    "image": null,
+    "stats": {
+      "influence": 5,
+      "conscience": 2,
+      "origine": "artefact"
+    },
+    "power": "Corruption – Contamine une carte ennemie."
+  },
+  {
+    "name": "Foudre d’Hermès",
+    "description": "Un sceptre de téléportation et d’attaque.",
+    "image": null,
+    "stats": {
+      "influence": 4,
+      "conscience": 1,
+      "origine": "artefact"
+    },
+    "power": "Téléportation – Permute deux cartes du champ de bataille."
+  },
+  {
+    "name": "Pierre de Chintamani",
+    "description": "Donne accès aux plans supérieurs pour un court instant.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 5,
+      "origine": "artefact"
+    },
+    "power": "Ascension – Rend une carte invulnérable pour un tour."
+  },
+  {
+    "name": "Coquille de Dagon",
+    "description": "Relique abyssale d’un ancien dieu marin.",
+    "image": null,
+    "stats": {
+      "influence": 3,
+      "conscience": 2,
+      "origine": "artefact"
+    },
+    "power": "Hurlement – Effraie toutes les cartes faibles."
+  },
+  {
+    "name": "Sabliers du Karma",
+    "description": "Inversent le flux du destin sur le champ de bataille.",
+    "image": null,
+    "stats": {
+      "influence": 2,
+      "conscience": 4,
+      "origine": "artefact"
+    },
+    "power": "Retour – Réinitialise l’état d’une carte."
+  }
+]

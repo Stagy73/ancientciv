@@ -1,0 +1,222 @@
+[
+  {
+    "name": "Flamme de Vérité",
+    "description": "Brûle les illusions ennemies.",
+    "stats": {
+      "influence": 3,
+      "conscience": 4,
+      "origine": "Pouvoir"
+    },
+    "power": "Révèle l'identité réelle de 2 personnages ennemis.",
+    "image": ""
+  },
+  {
+    "name": "Voile du Néant",
+    "description": "Efface temporairement une carte du jeu.",
+    "stats": {
+      "influence": 1,
+      "conscience": 5,
+      "origine": "Pouvoir"
+    },
+    "power": "Rend une carte invisible pendant 2 tours.",
+    "image": ""
+  },
+  {
+    "name": "Onde Psychique",
+    "description": "Vague mentale perturbatrice.",
+    "stats": {
+      "influence": 4,
+      "conscience": 2,
+      "origine": "Pouvoir"
+    },
+    "power": "Désoriente les pouvoirs ennemis pendant 1 tour.",
+    "image": ""
+  },
+  {
+    "name": "Fragment d'Éveil",
+    "description": "Éveille un potentiel caché.",
+    "stats": {
+      "influence": 2,
+      "conscience": 3,
+      "origine": "Pouvoir"
+    },
+    "power": "Donne +1 conscience à un allié.",
+    "image": ""
+  },
+  {
+    "name": "Clé d’Anubis",
+    "description": "Ouvre les portes du monde invisible.",
+    "stats": {
+      "influence": 3,
+      "conscience": 5,
+      "origine": "Pouvoir"
+    },
+    "power": "Permet de jouer une carte 'Événement' gratuitement.",
+    "image": ""
+  },
+  {
+    "name": "Marque du Serpent",
+    "description": "Insuffle l'énergie reptilienne primordiale.",
+    "stats": {
+      "influence": 5,
+      "conscience": 1,
+      "origine": "Pouvoir"
+    },
+    "power": "Inflige 3 dégâts directs à un adversaire.",
+    "image": ""
+  },
+  {
+    "name": "Souffle d’Inanna",
+    "description": "Guérison mystique de la lignée sacrée.",
+    "stats": {
+      "influence": 2,
+      "conscience": 4,
+      "origine": "Pouvoir"
+    },
+    "power": "Soigne entièrement une carte blessée.",
+    "image": ""
+  },
+  {
+    "name": "Mémoire Akashique",
+    "description": "Accès aux annales du destin.",
+    "stats": {
+      "influence": 1,
+      "conscience": 6,
+      "origine": "Pouvoir"
+    },
+    "power": "Permet de rejouer une carte du passé.",
+    "image": ""
+  },
+  {
+    "name": "Dissonance Vibratoire",
+    "description": "Altère les fréquences de combat.",
+    "stats": {
+      "influence": 2,
+      "conscience": 2,
+      "origine": "Pouvoir"
+    },
+    "power": "Annule un pouvoir ennemi au hasard.",
+    "image": ""
+  },
+  {
+    "name": "Résonance Divine",
+    "description": "Renforce l’harmonie d’un allié.",
+    "stats": {
+      "influence": 2,
+      "conscience": 3,
+      "origine": "Pouvoir"
+    },
+    "power": "Ajoute +1 à toutes les stats d'une carte alliée.",
+    "image": ""
+  },
+  {
+    "name": "Appel de Thot",
+    "description": "Invoque l’Ordre Cosmique.",
+    "stats": {
+      "influence": 4,
+      "conscience": 3,
+      "origine": "Pouvoir"
+    },
+    "power": "Permet de piocher 2 cartes supplémentaires.",
+    "image": ""
+  },
+  {
+    "name": "Silence Éternel",
+    "description": "Bloque toute communication mentale.",
+    "stats": {
+      "influence": 3,
+      "conscience": 2,
+      "origine": "Pouvoir"
+    },
+    "power": "Empêche l’adversaire d’utiliser des pouvoirs pendant 1 tour.",
+    "image": ""
+  },
+  {
+    "name": "Harmonie d'Éther",
+    "description": "Équilibre l’énergie des factions.",
+    "stats": {
+      "influence": 3,
+      "conscience": 3,
+      "origine": "Pouvoir"
+    },
+    "power": "Redistribue les points de stats entre 2 alliés.",
+    "image": ""
+  },
+  {
+    "name": "Gardien d’Ouroboros",
+    "description": "Le cycle du temps se ferme sur l’ennemi.",
+    "stats": {
+      "influence": 5,
+      "conscience": 5,
+      "origine": "Pouvoir"
+    },
+    "power": "Déclenche une boucle : rejoue le dernier tour.",
+    "image": ""
+  },
+  {
+    "name": "Sceau d’Isis",
+    "description": "Protection divine ancestrale.",
+    "stats": {
+      "influence": 2,
+      "conscience": 4,
+      "origine": "Pouvoir"
+    },
+    "power": "Protège une carte pendant 2 tours.",
+    "image": ""
+  },
+  {
+    "name": "Chant d’Enlil",
+    "description": "Manipule les vents cosmiques.",
+    "stats": {
+      "influence": 4,
+      "conscience": 1,
+      "origine": "Pouvoir"
+    },
+    "power": "Change l’ordre du jeu à ta faveur.",
+    "image": ""
+  },
+  {
+    "name": "Oracle de Lilith",
+    "description": "Annonce les mouvements futurs.",
+    "stats": {
+      "influence": 3,
+      "conscience": 6,
+      "origine": "Pouvoir"
+    },
+    "power": "Voit les 3 prochaines cartes de l’adversaire.",
+    "image": ""
+  },
+  {
+    "name": "Fusion Génétique",
+    "description": "Combine deux lignées.",
+    "stats": {
+      "influence": 3,
+      "conscience": 2,
+      "origine": "Pouvoir"
+    },
+    "power": "Fusionne 2 cartes pour en créer une nouvelle.",
+    "image": ""
+  },
+  {
+    "name": "Voie du Vide",
+    "description": "Supprime toute influence.",
+    "stats": {
+      "influence": 0,
+      "conscience": 7,
+      "origine": "Pouvoir"
+    },
+    "power": "Réinitialise l'influence de toutes les cartes en jeu.",
+    "image": ""
+  },
+  {
+    "name": "Pilier d'Horus",
+    "description": "Appel du soleil invisible.",
+    "stats": {
+      "influence": 4,
+      "conscience": 4,
+      "origine": "Pouvoir"
+    },
+    "power": "Ajoute 1 point de victoire si Horus est en jeu.",
+    "image": ""
+  }
+]

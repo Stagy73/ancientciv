@@ -112,4 +112,17 @@ router.put(
   }
 );
 
+// 🔍 Voir tous les profils utilisateurs
+router.get("/users", verifyToken, async (req, res) => {
+  try {
+    const users = await User.find().select("-password");
+    res.json(users);
+  } catch (err) {
+    console.error(err);
+    res
+      .status(500)
+      .json({ error: "Erreur lors de la récupération des utilisateurs." });
+  }
+});
+
 module.exports = router;

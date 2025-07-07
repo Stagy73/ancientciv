@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Théon – Gardien de l'Atlantide",
+    "description": "Protecteur silencieux des secrets engloutis.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 5, "origine": "Atlante" },
+    "power": "Barrière de Nacre – Immunité à la première attaque subie."
+  },
+  {
+    "name": "Elyra – Prêtresse des Marées",
+    "description": "Elle lit les marées temporelles.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 6, "origine": "Atlante" },
+    "power": "Oracle aqueux – Prévoit les 2 prochains événements."
+  },
+  {
+    "name": "Karsen – L’Architecte Fluide",
+    "description": "Bâtisseur de formes mouvantes.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 4, "origine": "Atlante" },
+    "power": "Mutation cristalline – Augmente aléatoirement 2 stats d’un allié."
+  },
+  {
+    "name": "Syra – Fille du Sonar",
+    "description": "Ses chants désorientent ennemis et alliés.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 5, "origine": "Atlante" },
+    "power": "Harmonie confuse – Échange les mains de deux adversaires."
+  },
+  {
+    "name": "Oryn – Veilleur de la Faille",
+    "description": "Il garde l’entrée entre les mondes.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 6, "origine": "Atlante" },
+    "power": "Scission – Duplique un artefact actif."
+  },
+  {
+    "name": "Meria – L'Algorythmique",
+    "description": "Esprit-calcul vivant, elle anticipe tout.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 7, "origine": "Atlante" },
+    "power": "Précognition – Voit 3 cartes futures du deck."
+  },
+  {
+    "name": "Zeon – L’Enfoui",
+    "description": "Il dort sous les ruines… et se réveille lentement.",
+    "image": null,
+    "stats": { "influence": 6, "conscience": 3, "origine": "Atlante" },
+    "power": "Éveil – Inflige 2 dégâts à toutes les cartes d’origine non atlante."
+  },
+  {
+    "name": "Nirel – Porteuse de la Mémoire",
+    "description": "Connait les noms oubliés.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 6, "origine": "Atlante" },
+    "power": "Réactivation – Réutilise une carte événement du passé."
+  },
+  {
+    "name": "Valun – Le Dissident d'Orichalque",
+    "description": "Traître Atlante, désormais libre penseur.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 5, "origine": "Atlante" },
+    "power": "Rupture – Empêche tout pouvoir Anunnaki pendant 1 tour."
+  },
+  {
+    "name": "Azaril – Messager des Profondeurs",
+    "description": "Il parle aux créatures abyssales.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 5, "origine": "Atlante" },
+    "power": "Symbiose – Gagne les stats d’un allié pendant un tour."
+  }
+]

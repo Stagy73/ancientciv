@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Anu – Le Trône Silencieux",
+    "description": "Souverain suprême, maître de la Loi cosmique.",
+    "image": null,
+    "stats": { "influence": 7, "conscience": 4, "origine": "Anunnaki" },
+    "power": "Décret Divin – Réinitialise tous les effets sur le terrain."
+  },
+  {
+    "name": "Enlil – Le Purificateur",
+    "description": "Fanatique du contrôle, il impose l’ordre.",
+    "image": null,
+    "stats": { "influence": 6, "conscience": 2, "origine": "Anunnaki" },
+    "power": "Jugement – Élimine une carte Hybride par tour."
+  },
+  {
+    "name": "Ninhursag – La Matrice",
+    "description": "Mère des formes biologiques.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 6, "origine": "Anunnaki" },
+    "power": "Reconstruction – Restaure totalement un allié."
+  },
+  {
+    "name": "Utu – L’Œil Radiant",
+    "description": "Juge incorruptible, observateur des âmes.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 5, "origine": "Anunnaki" },
+    "power": "Révélation – Voit toutes les cartes de l'adversaire."
+  },
+  {
+    "name": "Ninurta – Le Chasseur céleste",
+    "description": "Traqueur des rebelles et hybrides instables.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 3, "origine": "Anunnaki" },
+    "power": "Précision – Inflige +1 dégât aux cibles marquées."
+  },
+  {
+    "name": "Shamash – L’Arbitre Solaire",
+    "description": "Éclaire les secrets les plus sombres.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 5, "origine": "Anunnaki" },
+    "power": "Illumination – Nul ne peut se cacher."
+  },
+  {
+    "name": "Geshtu-E – Le Concepteur de l’Esprit",
+    "description": "Architecte de la conscience humaine.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 6, "origine": "Anunnaki" },
+    "power": "Implant – Ajoute +1 conscience à un allié."
+  },
+  {
+    "name": "Ashur – Le Marteau Céleste",
+    "description": "Militaire loyal, porteur de châtiment.",
+    "image": null,
+    "stats": { "influence": 6, "conscience": 3, "origine": "Anunnaki" },
+    "power": "Frappe orbitale – Détruit un artefact ennemi."
+  },
+  {
+    "name": "Nabu – Le Mémoire Sacré",
+    "description": "Scribe éternel, il garde trace de tout.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 6, "origine": "Anunnaki" },
+    "power": "Archivage – Accède à une carte jouée précédemment."
+  },
+  {
+    "name": "Inanna – La Lance de Vérité",
+    "description": "Dévoile l’âme des combattants.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 4, "origine": "Anunnaki" },
+    "power": "Transparence – Empêche l’adversaire de bluffer."
+  }
+]

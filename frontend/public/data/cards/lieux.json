@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Sippar – Le Portail Stellaire",
+    "description": "Ancien portail entre les mondes.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 1, "origine": "Lieu" },
+    "power": "Transport – Échange ta main avec celle d’un autre joueur."
+  },
+  {
+    "name": "Eridu – La Première Cité",
+    "description": "Lieu de naissance de l’humanité selon les Anunnaki.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 1, "origine": "Lieu" },
+    "power": "Souche Originelle – Renforce un hybride (stats +1)."
+  },
+  {
+    "name": "Uruk – Cité du Code",
+    "description": "Berceau des lois sacrées.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Lieu" },
+    "power": "Ordre ancestral – Annule les effets chaotiques pour 1 tour."
+  },
+  {
+    "name": "Etemenanki – La Tour du Ciel",
+    "description": "Ancien relais entre Terre et Nibiru.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 0, "origine": "Lieu" },
+    "power": "Ascension – Permet d’appeler une carte Anunnaki."
+  },
+  {
+    "name": "Pyramide de Saqqarah",
+    "description": "Chambre de résurrection temporelle.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 2, "origine": "Lieu" },
+    "power": "Cycle – Ramène une carte du cimetière."
+  },
+  {
+    "name": "Lac Titicaca",
+    "description": "Refuge oublié des Atlantes.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Lieu" },
+    "power": "Source cristalline – Recharge 1 artefact épuisé."
+  },
+  {
+    "name": "Mont Hermon",
+    "description": "Lieu de descente des Veilleurs.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 1, "origine": "Lieu" },
+    "power": "Appel interdit – Invoque une entité rebelle (aléatoire)."
+  },
+  {
+    "name": "Göbekli Tepe",
+    "description": "Le plus ancien temple connu.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Lieu" },
+    "power": "Activation archaïque – Active un pouvoir inactif."
+  },
+  {
+    "name": "Stonehenge",
+    "description": "Alignement énergétique majeur.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Lieu" },
+    "power": "Équilibre cosmique – Restaure les stats des cartes en jeu."
+  },
+  {
+    "name": "Cité de Dvaraka",
+    "description": "Ville engloutie contenant des secrets divins.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 2, "origine": "Lieu" },
+    "power": "Révélation submergée – Dévoile les 3 prochaines cartes du deck."
+  },
+  {
+    "name": "Shambhala",
+    "description": "Centre spirituel caché des sages.",
+    "image": null,
+    "stats": { "influence": 0, "conscience": 3, "origine": "Lieu" },
+    "power": "Pacification – Aucune attaque ne peut avoir lieu pendant 1 tour."
+  },
+  {
+    "name": "Nazca – Lignes du Ciel",
+    "description": "Cartographie céleste antique.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 1, "origine": "Lieu" },
+    "power": "Navigation divine – Permet de chercher une carte spécifique."
+  },
+  {
+    "name": "Machu Picchu",
+    "description": "Forteresse énergétique andine.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 1, "origine": "Lieu" },
+    "power": "Altitude – Immunité à tout pouvoir reptilien."
+  },
+  {
+    "name": "Île de Pâques",
+    "description": "Alignement mystique des Moaï.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 1, "origine": "Lieu" },
+    "power": "Gardien silencieux – Empêche toute intrusion pendant 1 tour."
+  },
+  {
+    "name": "Sphinx de Gizeh",
+    "description": "Pose la question oubliée.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Lieu" },
+    "power": "Énigme – Permet de gagner une carte bonus si devinée."
+  },
+  {
+    "name": "Babylone",
+    "description": "Cité d’excès et de magie noire.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 0, "origine": "Lieu" },
+    "power": "Corruption – Vol d’un artefact ennemi."
+  },
+  {
+    "name": "Lemuria",
+    "description": "Continent perdu rival d’Atlantis.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 1, "origine": "Lieu" },
+    "power": "Réminiscence – Invoque un personnage atlante aléatoire."
+  },
+  {
+    "name": "Temple de Dendérah",
+    "description": "Lien entre ciel et terre.",
+    "image": null,
+    "stats": { "influence": 1, "conscience": 2, "origine": "Lieu" },
+    "power": "Connexion – Voir les intentions d’un adversaire."
+  },
+  {
+    "name": "Vallée des Rois",
+    "description": "Nécropole sacrée des anciens rois.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 1, "origine": "Lieu" },
+    "power": "Sépulture – Enterre une carte pour la ressusciter plus tard."
+  },
+  {
+    "name": "Château de Montségur",
+    "description": "Dernier refuge des gardiens du Graal.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 2, "origine": "Lieu" },
+    "power": "Graal caché – Soigne entièrement un personnage."
+  }
+]

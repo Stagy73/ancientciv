@@ -153,6 +153,19 @@ const Home = () => {
             Enregistrer les modifications
           </button>
         </form>
+        <button
+          onClick={() => (window.location.href = "/browse")}
+          style={{
+            marginTop: 20,
+            backgroundColor: "#333",
+            color: "white",
+            padding: "10px 20px",
+            border: "none",
+            borderRadius: 5,
+          }}
+        >
+          🔍 Voir les autres profils
+        </button>
 
         {message && <p style={{ marginTop: 10 }}>{message}</p>}
       </div>

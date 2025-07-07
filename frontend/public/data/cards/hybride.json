@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Lilith – Mère des Nephilim",
+    "description": "Première femme libre et puissante.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 5, "origine": "Hybride" },
+    "power": "Éveil – Réactive une carte dormante."
+  },
+  {
+    "name": "Zisudra – L’Éveillé",
+    "description": "Ancien hybride immortel.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 5, "origine": "Hybride" },
+    "power": "Résurrection – Rejoue une carte éliminée."
+  },
+  {
+    "name": "Ayla – La Flamme Libre",
+    "description": "Elle défie les dieux avec grâce et feu.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 4, "origine": "Hybride" },
+    "power": "Insoumission – Ignore les effets de domination."
+  },
+  {
+    "name": "Kaël – L'Insoumis",
+    "description": "Refuse toute allégeance, même à ses créateurs.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 6, "origine": "Hybride" },
+    "power": "Libre arbitre – Inaltérable par les pouvoirs mentaux."
+  },
+  {
+    "name": "Nahema – L'Empathique",
+    "description": "Ses émotions guident la rébellion.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 6, "origine": "Hybride" },
+    "power": "Soutien psychique – Rend 2 conscience à un allié."
+  },
+  {
+    "name": "Elandor – Le Marcheur des Deux Mondes",
+    "description": "Navigue entre ADN simien et divin.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 3, "origine": "Hybride" },
+    "power": "Bascule – Change temporairement d’origine."
+  },
+  {
+    "name": "Syra – L’Enchanteresse",
+    "description": "Use de charme et illusion pour survivre.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 4, "origine": "Hybride" },
+    "power": "Mirage – Détourne une attaque vers un autre joueur."
+  },
+  {
+    "name": "Orin – Le Sang-Mêlé",
+    "description": "Né d’un amour interdit entre deux races.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 5, "origine": "Hybride" },
+    "power": "Fusion instinctive – Peut copier un pouvoir ennemi."
+  },
+  {
+    "name": "Talia – La Survivante",
+    "description": "Dernière d’une lignée perdue.",
+    "image": null,
+    "stats": { "influence": 2, "conscience": 6, "origine": "Hybride" },
+    "power": "Mémoire ancestrale – Accède à une carte détruite."
+  },
+  {
+    "name": "Noam – Le Porteur d’Aurore",
+    "description": "Symbolise l’espoir d’un monde réconcilié.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 5, "origine": "Hybride" },
+    "power": "Unité – Double les effets des cartes alliées hybrides."
+  }
+]

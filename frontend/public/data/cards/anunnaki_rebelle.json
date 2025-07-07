@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Marduk – Le Dominant",
+    "description": "Voulait régner seul sur les hommes.",
+    "image": null,
+    "stats": { "influence": 6, "conscience": 2, "origine": "Anunnaki rebelle" },
+    "power": "Domination – Inflige +2 contre les hybrides."
+  },
+  {
+    "name": "Ishtar – La Porte d’Or",
+    "description": "Séductrice et manipulatrice sans égale.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 4, "origine": "Anunnaki rebelle" },
+    "power": "Possession – Contrôle temporairement une carte ennemie."
+  },
+  {
+    "name": "Nergal – Seigneur des Profondeurs",
+    "description": "Règne sur les morts et les ténèbres.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 3, "origine": "Anunnaki rebelle" },
+    "power": "Malédiction – Réduit l’influence d’un ennemi."
+  },
+  {
+    "name": "Kingu – L’Héritier de Tiamat",
+    "description": "Chef des armées rebelles.",
+    "image": null,
+    "stats": { "influence": 6, "conscience": 2, "origine": "Anunnaki rebelle" },
+    "power": "Stratégie – Permet d’attaquer deux fois."
+  },
+  {
+    "name": "Ereshkigal – La Sombre Reine",
+    "description": "Règne sur le monde souterrain.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 5, "origine": "Anunnaki rebelle" },
+    "power": "Résurgence – Reprend une carte défaussée."
+  },
+  {
+    "name": "Namtar – Le Porteur de Destin",
+    "description": "Messager de la mort programmée.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 3, "origine": "Anunnaki rebelle" },
+    "power": "Virus – Fait perdre 1 conscience à chaque tour."
+  },
+  {
+    "name": "Adapa – L’Interdit",
+    "description": "Premier homme doté de sagesse, trahi.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 6, "origine": "Anunnaki rebelle" },
+    "power": "Connaissance perdue – Ignore les malus une fois."
+  },
+  {
+    "name": "Belus – Le Grand Artisan",
+    "description": "Forge les artefacts de guerre.",
+    "image": null,
+    "stats": { "influence": 4, "conscience": 4, "origine": "Anunnaki rebelle" },
+    "power": "Création – Ajoute un artefact à la main."
+  },
+  {
+    "name": "Lamashtu – La Déesse Dévoreuse",
+    "description": "Détourne l’énergie vitale des faibles.",
+    "image": null,
+    "stats": { "influence": 5, "conscience": 2, "origine": "Anunnaki rebelle" },
+    "power": "Drain – Vole 1 influence à chaque attaque réussie."
+  },
+  {
+    "name": "Zarpanit – L’Éclaireuse des Mondes",
+    "description": "Reine exploratrice des portails stellaires.",
+    "image": null,
+    "stats": { "influence": 3, "conscience": 5, "origine": "Anunnaki rebelle" },
+    "power": "Porte ouverte – Recherche une carte Lieu dans le deck."
+  }
+]
