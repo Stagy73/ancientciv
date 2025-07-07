@@ -10,6 +10,7 @@ import GoogleRedirect from "./pages/GoogleRedirect";
 import PrivateRoute from "./components/PrivateRoute";
 import AuthenticatedLayout from "./components/AuthenticatedLayout";
 import Arena from "./pages/game/Arena";
+import SelectRace from "./pages/game/SelectRace"; // 👈
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/game" element={<Game />} />
           <Route path="/arena" element={<Arena />} />
+          <Route path="/game/select-race" element={<SelectRace />} /> {/* 👈 */}
           <Route path="/browse" element={<BrowseUsers />} />
         </Route>
       </Routes>

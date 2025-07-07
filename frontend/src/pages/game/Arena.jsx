@@ -42,15 +42,24 @@ const Arena = () => {
   const [selectedPair, setSelectedPair] = useState([]);
   const [score, setScore] = useState({ player: 0, bot: 0 });
   const [gameOver, setGameOver] = useState(false);
-  const [playerRace] = useState("Hybride");
+  const [playerRace, setPlayerRace] = useState("Hybride");
 
-  const setupGame = async () => {
+  // 🧠 Chargement de la race depuis le localStorage
+  useEffect(() => {
+    const storedRace = localStorage.getItem("selectedRace") || "Hybride";
+    setPlayerRace(storedRace);
+    setupGame(storedRace);
+  }, []);
+
+  // 🔁 Fonction de setup du jeu (appelée au lancement ou relance)
+  const setupGame = async (race) => {
     const allCards = await loadAllCards();
-    const shuffled = allCards.sort(() => 0.5 - Math.random());
+    const shuffled = [...allCards].sort(() => 0.5 - Math.random());
 
     const playerCharacter = allCards.find(
-      (c) => c.stats.origine.toLowerCase() === playerRace.toLowerCase()
+      (c) => c.stats.origine.toLowerCase() === race.toLowerCase()
     );
+
     const playerRest = shuffled
       .filter((c) => c !== playerCharacter)
       .slice(0, 9);
@@ -67,10 +76,7 @@ const Arena = () => {
     setGameOver(false);
   };
 
-  useEffect(() => {
-    setupGame();
-  }, []);
-
+  // 🔘 Sélection de 2 cartes par tour
   const handleCardClick = (index) => {
     if (gameOver || selectedIndexes.includes(index)) return;
 
@@ -134,8 +140,8 @@ const Arena = () => {
 
       <div className="game-page">
         <h1>⚔️ Arène de Combat</h1>
+        <p>Race sélectionnée : {playerRace}</p>
         <p>Tour {Math.min(round, 5)} / 5</p>
-
         <p>{message}</p>
 
         <div className="scoreboard">
@@ -181,9 +187,9 @@ const Arena = () => {
           <button
             className="deal-button"
             style={{ marginTop: 20 }}
-            onClick={setupGame}
+            onClick={() => setupGame(playerRace)}
           >
-            🔄 Rejouer la partie
+            🔄 Rejouer avec {playerRace}
           </button>
         )}
       </div>
