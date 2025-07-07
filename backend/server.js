@@ -28,6 +28,8 @@ mongoose
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
 app.use("/auth", authRoutes);
+const apiRoutes = require("./routes/api");
+app.use("/api", apiRoutes);
 
 app.listen(5000, () =>
   console.log("🚀 Server running on http://localhost:5000")
