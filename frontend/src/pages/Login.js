@@ -14,11 +14,12 @@ const Login = () => {
     setSuccess("");
 
     try {
-      // 🔐 Envoie des identifiants
       const res = await axios.post(
         "http://localhost:5000/api/login",
         formData,
-        { withCredentials: true }
+        {
+          withCredentials: true,
+        }
       );
 
       const token = res.data.token;
@@ -27,10 +28,8 @@ const Login = () => {
         return;
       }
 
-      // 💾 Stockage du token
       localStorage.setItem("token", token);
 
-      // 🔎 Vérifie l'authentification via /api/profile
       const profileRes = await axios.get("http://localhost:5000/api/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -39,7 +38,7 @@ const Login = () => {
 
       if (profileRes.status === 200) {
         setSuccess("Connexion réussie !");
-        setTimeout(() => navigate("/home"), 1000); // ⏳ Redirection
+        setTimeout(() => navigate("/home"), 1000);
       } else {
         setError("Erreur d'authentification.");
       }
@@ -54,12 +53,18 @@ const Login = () => {
     }
   };
 
+  const handleGoogleLogin = () => {
+    // Redirige vers le backend pour lancer le processus OAuth Google
+    window.location.href = "http://localhost:5000/auth/google";
+  };
+
   return (
     <div style={{ maxWidth: 400, margin: "0 auto" }}>
       <h2>Se connecter</h2>
       <form onSubmit={handleSubmit}>
         {error && <p style={{ color: "red" }}>{error}</p>}
         {success && <p style={{ color: "green" }}>{success}</p>}
+
         <input
           type="email"
           placeholder="Email"
@@ -80,6 +85,23 @@ const Login = () => {
         />
         <button type="submit">Connexion</button>
       </form>
+
+      <hr />
+
+      <button
+        onClick={handleGoogleLogin}
+        style={{
+          marginTop: "1rem",
+          background: "#4285F4",
+          color: "white",
+          border: "none",
+          padding: "0.5rem 1rem",
+          borderRadius: "4px",
+          cursor: "pointer",
+        }}
+      >
+        Se connecter avec Google
+      </button>
     </div>
   );
 };

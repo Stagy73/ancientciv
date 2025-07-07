@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Game from "./pages/Game";
 import PrivateRoute from "./components/PrivateRoute";
+import GoogleRedirect from "./pages/GoogleRedirect";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/google-redirect" element={<GoogleRedirect />} />
         <Route
           path="/home"
           element={
