@@ -72,5 +72,44 @@ router.get("/profile", verifyToken, async (req, res) => {
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
+const multer = require("multer");
+const path = require("path");
+
+// ⚙️ Configuration Multer
+const storage = multer.diskStorage({
+  destination: "uploads/",
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  },
+});
+const upload = multer({ storage });
+
+// 🔐 Route mise à jour profil
+router.put(
+  "/profile",
+  verifyToken,
+  upload.single("profilePic"),
+  async (req, res) => {
+    try {
+      const updateFields = {
+        username: req.body.username,
+        description: req.body.description,
+      };
+
+      if (req.file) updateFields.profilePic = `/uploads/${req.file.filename}`;
+
+      const user = await User.findByIdAndUpdate(req.user.id, updateFields, {
+        new: true,
+      }).select("-password");
+
+      res.json(user);
+    } catch (err) {
+      console.error(err);
+      res
+        .status(500)
+        .json({ error: "Erreur lors de la mise à jour du profil." });
+    }
+  }
+);
 
 module.exports = router;

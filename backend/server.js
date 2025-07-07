@@ -37,6 +37,7 @@ app.use("/auth", authRoutes);
 const apiRoutes = require("./routes/api");
 console.log("🔗 API routes loaded");
 app.use("/api", apiRoutes);
+app.use("/uploads", express.static("uploads")); // pour accéder aux images depuis le frontend
 
 app.listen(5000, () =>
   console.log("🚀 Server running on http://localhost:5000")

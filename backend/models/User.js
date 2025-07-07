@@ -4,9 +4,12 @@ const UserSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String },
   name: { type: String },
-  googleId: { type: String },
-  resetToken: { type: String },
-  resetTokenExpiration: { type: Date },
+  username: { type: String },
+  description: { type: String },
+  profilePic: { type: String },
+  points: { type: Number, default: 0 },
+  history: { type: [String], default: [] },
+  googleId: { type: String }, // si tu utilises Google OAuth
 });
 
 module.exports = mongoose.model("User", UserSchema);

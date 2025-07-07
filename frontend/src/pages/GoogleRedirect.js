@@ -1,16 +1,15 @@
-// pages/GoogleRedirect.js
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const GoogleRedirect = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const token = params.get("token");
+    const urlParams = new URLSearchParams(window.location.search);
+    const token = urlParams.get("token");
 
     if (token) {
-      localStorage.setItem("token", token);
+      localStorage.setItem("token", token); // 🔐 stocker le token
       navigate("/home");
     } else {
       navigate("/login");
