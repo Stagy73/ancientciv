@@ -33,6 +33,7 @@ const Navbar = () => {
         <Link to="/browse" style={{ color: "#fff", textDecoration: "none" }}>
           👁️ Voir les profils
         </Link>
+        <Link to="/arena">⚔️ Arène</Link>
       </div>
 
       <button

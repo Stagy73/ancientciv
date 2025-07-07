@@ -9,6 +9,7 @@ import BrowseUsers from "./pages/BrowseUsers";
 import GoogleRedirect from "./pages/GoogleRedirect";
 import PrivateRoute from "./components/PrivateRoute";
 import AuthenticatedLayout from "./components/AuthenticatedLayout";
+import Arena from "./pages/game/Arena";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         >
           <Route path="/home" element={<Home />} />
           <Route path="/game" element={<Game />} />
+          <Route path="/arena" element={<Arena />} />
           <Route path="/browse" element={<BrowseUsers />} />
         </Route>
       </Routes>
