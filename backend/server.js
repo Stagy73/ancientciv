@@ -1,14 +1,26 @@
+// ─────────────────────────────────────────────────────────────
+// 🌐 IMPORTS & CONFIGS
+// ─────────────────────────────────────────────────────────────
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const session = require("express-session");
 const passport = require("passport");
+require("dotenv").config(); // 🔥 Required for .env variables
+
 const authRoutes = require("./routes/auth");
-require("dotenv").config(); // 🔥 Indispensable !
+const apiRoutes = require("./routes/api");
+const arenaRoutes = require("./routes/arena");
 
 require("./config/passport")(passport);
 
 const app = express();
+
+// ─────────────────────────────────────────────────────────────
+// 🔗 MIDDLEWARES
+// ─────────────────────────────────────────────────────────────
+
 app.use(
   cors({
     origin: "http://localhost:3000",
@@ -17,6 +29,7 @@ app.use(
 );
 
 app.use(express.json());
+
 app.use(
   session({
     secret: process.env.JWT_SECRET || "codex_arcana_secret",
@@ -24,21 +37,36 @@ app.use(
     saveUninitialized: false,
   })
 );
+
 app.use(passport.initialize());
 app.use(passport.session());
 
-// ✅ Connexion à MongoDB Atlas (pas localhost)
+// ─────────────────────────────────────────────────────────────
+// 🗄️  DATABASE CONNECTION
+// ─────────────────────────────────────────────────────────────
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB Atlas connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
-app.use("/auth", authRoutes);
-const apiRoutes = require("./routes/api");
-console.log("🔗 API routes loaded");
-app.use("/api", apiRoutes);
-app.use("/uploads", express.static("uploads")); // pour accéder aux images depuis le frontend
+// ─────────────────────────────────────────────────────────────
+// 🛣️  ROUTES
+// ─────────────────────────────────────────────────────────────
 
-app.listen(5000, () =>
-  console.log("🚀 Server running on http://localhost:5000")
+app.use("/auth", authRoutes);
+app.use("/api", apiRoutes);
+app.use("/api/arena", arenaRoutes); // ✅ Arena routes for points tracking
+app.use("/uploads", express.static("uploads")); // Access uploaded files
+
+console.log("✅ All routes loaded");
+
+// ─────────────────────────────────────────────────────────────
+// 🚀 SERVER START
+// ─────────────────────────────────────────────────────────────
+
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () =>
+  console.log(`🚀 Server running on http://localhost:${PORT}`)
 );

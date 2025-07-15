@@ -1,16 +1,29 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// 🛡️  IMPORTS & MIDDLEWARES
+// ─────────────────────────────────────────────────────────────────────────────
+
 const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+const ArenaScore = require("../models/ArenaScore");
 const verifyToken = require("../middleware/verifyToken");
+const multer = require("multer");
+const path = require("path");
 
-// Fonction pour vérifier la force d’un mot de passe
+// ─────────────────────────────────────────────────────────────────────────────
+// 🔒 PASSWORD SECURITY FUNCTION
+// ─────────────────────────────────────────────────────────────────────────────
+
 const isStrongPassword = (password) => {
   return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/.test(password);
 };
 
-// 🔐 Inscription
+// ─────────────────────────────────────────────────────────────────────────────
+// 👤 USER REGISTRATION
+// ─────────────────────────────────────────────────────────────────────────────
+
 router.post("/register", async (req, res) => {
   const { email, password, name } = req.body;
 
@@ -29,12 +42,15 @@ router.post("/register", async (req, res) => {
 
     res.status(201).json({ message: "Utilisateur enregistré avec succès" });
   } catch (err) {
-    console.error(err);
+    console.error("❌ Erreur inscription:", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
 
-// 🔑 Connexion
+// ─────────────────────────────────────────────────────────────────────────────
+// 🔑 USER LOGIN
+// ─────────────────────────────────────────────────────────────────────────────
+
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -50,32 +66,35 @@ router.post("/login", async (req, res) => {
     const token = jwt.sign(
       { id: user._id },
       process.env.JWT_SECRET || "jwt_secret_key",
-      {
-        expiresIn: "7d",
-      }
+      { expiresIn: "7d" }
     );
 
     res.status(200).json({ message: "Connexion réussie", token });
   } catch (err) {
-    console.error(err);
+    console.error("❌ Erreur connexion:", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
 
-// ✅ Route sécurisée : profil utilisateur
+// ─────────────────────────────────────────────────────────────────────────────
+// 👤 GET USER PROFILE
+// ─────────────────────────────────────────────────────────────────────────────
+
 router.get("/profile", verifyToken, async (req, res) => {
   try {
     const user = await User.findById(req.user.id).select("-password");
     if (!user) return res.status(404).json({ error: "Utilisateur non trouvé" });
     res.json(user);
   } catch (err) {
+    console.error("❌ Erreur profil:", err);
     res.status(500).json({ error: "Erreur serveur" });
   }
 });
-const multer = require("multer");
-const path = require("path");
 
-// ⚙️ Configuration Multer
+// ─────────────────────────────────────────────────────────────────────────────
+// 🖼️ UPDATE USER PROFILE + UPLOAD PICTURE
+// ─────────────────────────────────────────────────────────────────────────────
+
 const storage = multer.diskStorage({
   destination: "uploads/",
   filename: (req, file, cb) => {
@@ -84,7 +103,6 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-// 🔐 Route mise à jour profil
 router.put(
   "/profile",
   verifyToken,
@@ -104,7 +122,7 @@ router.put(
 
       res.json(user);
     } catch (err) {
-      console.error(err);
+      console.error("❌ Erreur mise à jour profil:", err);
       res
         .status(500)
         .json({ error: "Erreur lors de la mise à jour du profil." });
@@ -112,17 +130,35 @@ router.put(
   }
 );
 
-// 🔍 Voir tous les profils utilisateurs
+// ─────────────────────────────────────────────────────────────────────────────
+// 📊 GET ALL USERS WITH ARENA POINTS
+// ─────────────────────────────────────────────────────────────────────────────
+
 router.get("/users", verifyToken, async (req, res) => {
   try {
     const users = await User.find().select("-password");
-    res.json(users);
+
+    const usersWithPoints = await Promise.all(
+      users.map(async (user) => {
+        const score = await ArenaScore.findOne({ userId: user._id });
+        return {
+          ...user.toObject(),
+          points: score ? score.points : 0,
+        };
+      })
+    );
+
+    res.json(usersWithPoints);
   } catch (err) {
-    console.error(err);
+    console.error("❌ Erreur récupération utilisateurs:", err);
     res
       .status(500)
       .json({ error: "Erreur lors de la récupération des utilisateurs." });
   }
 });
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ✅ EXPORT ROUTER
+// ─────────────────────────────────────────────────────────────────────────────
 
 module.exports = router;

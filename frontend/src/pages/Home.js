@@ -1,10 +1,10 @@
-// src/pages/Home.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
   const [user, setUser] = useState(null);
+  const [userPoints, setUserPoints] = useState(0);
   const [formData, setFormData] = useState({
     username: "",
     description: "",
@@ -30,7 +30,22 @@ const Home = () => {
         console.error("Erreur profil:", err);
       }
     };
-    fetchProfile();
+
+    const fetchPoints = async () => {
+      try {
+        const res = await axios.get("http://localhost:5000/api/arena/score", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+        setUserPoints(res.data.points || 0);
+      } catch (err) {
+        console.error("Erreur récupération des points:", err);
+      }
+    };
+
+    if (token) {
+      fetchProfile();
+      fetchPoints();
+    }
   }, [token]);
 
   const handleChange = (e) => {
@@ -68,6 +83,7 @@ const Home = () => {
 
   return (
     <>
+      <Navbar />
       <div style={{ maxWidth: 700, margin: "0 auto", padding: 20 }}>
         <h1 style={{ fontSize: "2em", textAlign: "center" }}>
           Bienvenue dans <span style={{ color: "#6e44ff" }}>Codex Arcana</span>,{" "}
@@ -102,7 +118,7 @@ const Home = () => {
           )}
           <div>
             <p>
-              <strong>Points :</strong> {user.points}
+              <strong>Points :</strong> {userPoints}
             </p>
             <p>
               <strong>Historique :</strong>{" "}

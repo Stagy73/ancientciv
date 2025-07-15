@@ -44,14 +44,35 @@ const Arena = () => {
   const [gameOver, setGameOver] = useState(false);
   const [playerRace, setPlayerRace] = useState("Hybride");
 
-  // 🧠 Chargement de la race depuis le localStorage
   useEffect(() => {
     const storedRace = localStorage.getItem("selectedRace") || "Hybride";
     setPlayerRace(storedRace);
     setupGame(storedRace);
   }, []);
 
-  // 🔁 Fonction de setup du jeu (appelée au lancement ou relance)
+  const saveArenaPoints = async (points) => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      console.log("❗ No token found");
+      return;
+    }
+    try {
+      console.log("🎯 Sending points to backend:", points);
+      const res = await fetch("http://localhost:5000/api/arena/score", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ points }),
+      });
+      const data = await res.json();
+      console.log("✅ Points saved response:", data);
+    } catch (err) {
+      console.error("❌ Error saving points:", err);
+    }
+  };
+
   const setupGame = async (race) => {
     const allCards = await loadAllCards();
     const shuffled = [...allCards].sort(() => 0.5 - Math.random());
@@ -76,7 +97,6 @@ const Arena = () => {
     setGameOver(false);
   };
 
-  // 🔘 Sélection de 2 cartes par tour
   const handleCardClick = (index) => {
     if (gameOver || selectedIndexes.includes(index)) return;
 
@@ -124,11 +144,16 @@ const Arena = () => {
 
         if (round >= 5) {
           setGameOver(true);
-          setMessage((prev) => {
-            if (score.player > score.bot) return prev + " 🏆 Victoire finale !";
-            if (score.bot > score.player) return prev + " 💀 Défaite...";
-            return prev + " 🤝 Match nul !";
-          });
+
+          if (score.player > score.bot) {
+            console.log("🏆 Victory! Saving points...");
+            saveArenaPoints(1);
+            setMessage((prev) => prev + " 🏆 Victoire finale !");
+          } else if (score.bot > score.player) {
+            setMessage((prev) => prev + " 💀 Défaite...");
+          } else {
+            setMessage((prev) => prev + " 🤝 Match nul !");
+          }
         }
       }, 1500);
     }
