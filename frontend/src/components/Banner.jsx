@@ -1,15 +1,38 @@
-import React from "react";
-
-import bannerImage from "../assets/banner1.png"; // Chemin relatif au dossier components
-import "./Banner.css"; // ✅ Importe le CSS ici
+import React, { useRef, useEffect } from "react";
+import bannerVideo from "../assets/banner.mp4";
+import "./Banner.css";
 
 const Banner = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    const handleEnded = () => {
+      video.currentTime = 0; // ✅ Rewind to beginning
+      video.pause(); // ✅ Stay paused at start
+    };
+
+    if (video) {
+      video.addEventListener("ended", handleEnded);
+    }
+
+    return () => {
+      if (video) {
+        video.removeEventListener("ended", handleEnded);
+      }
+    };
+  }, []);
+
   return (
     <div className="banner">
-      <img
-        src={bannerImage} // 👈 Pas entre guillemets !
-        alt="Codex Arcana Banner"
-        className="banner-img"
+      <video
+        ref={videoRef}
+        className="banner-video"
+        src={bannerVideo}
+        autoPlay
+        muted
+        playsInline
       />
       <div className="banner-content">
         <h1>Codex Arcana – Rise of the Reptilian Order</h1>
