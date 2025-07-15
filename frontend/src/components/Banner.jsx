@@ -1,16 +1,18 @@
 import React, { useRef, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import bannerVideo from "../assets/banner.mp4";
 import "./Banner.css";
 
 const Banner = () => {
   const videoRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const video = videoRef.current;
 
     const handleEnded = () => {
-      video.currentTime = 0; // ✅ Rewind to beginning
-      video.pause(); // ✅ Stay paused at start
+      video.currentTime = 0;
+      video.pause();
     };
 
     if (video) {
@@ -38,8 +40,8 @@ const Banner = () => {
         <h1>Codex Arcana – Rise of the Reptilian Order</h1>
         <p>Unlock the Secrets of the Ancients</p>
         <div className="banner-buttons">
-          <button>Learn More</button>
-          <button>Enter the Arena</button>
+          <button onClick={() => navigate("/about")}>Learn More</button>
+          <button onClick={() => navigate("/arena")}>Enter the Arena</button>
         </div>
       </div>
     </div>

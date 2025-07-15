@@ -1,87 +1,106 @@
+// ✅ Codex Arcana — Game.jsx (Sélecteur de Main)
+
 import React, { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
+
 import "../styles/game.css";
 import CardHand from "./game/CardHand";
-import StoryText from "./game/StoryText";
-import StatsPanel from "./game/StatsPanel";
 import { loadAllCards } from "./game/data/cards";
 
 const Game = () => {
-  const [hand, setHand] = useState([]);
   const [allCards, setAllCards] = useState([]);
+  const [selectedHand, setSelectedHand] = useState([]);
+  const [randomHand, setRandomHand] = useState([]);
   const [animating, setAnimating] = useState(false);
-  const [niveau, setNiveau] = useState(1); // Niveau du joueur
-  const [filtre, setFiltre] = useState("Toutes"); // ⬅️ Nouveau filtre
-
-  const [stats] = useState({
-    influence: 5,
-    conscience: 3,
-    origine: "Hybride",
-  });
 
   useEffect(() => {
     const fetchCards = async () => {
       const cards = await loadAllCards();
       setAllCards(cards);
-      setHand(cards); // Affiche tout au début
     };
     fetchCards();
   }, []);
 
-  const dealNewHand = () => {
-    setAnimating(true);
-    setTimeout(() => {
-      const newHand = allCards.sort(() => 0.5 - Math.random()).slice(0, 10);
-      setHand(newHand);
-      setAnimating(false);
-    }, 800);
+  const toggleSelectCard = (card) => {
+    if (selectedHand.includes(card)) {
+      setSelectedHand(selectedHand.filter((c) => c !== card));
+    } else {
+      if (selectedHand.length < 10) {
+        setSelectedHand([...selectedHand, card]);
+      } else {
+        alert("Tu ne peux choisir que 10 cartes maximum");
+      }
+    }
   };
 
-  const handleFiltreChange = (e) => {
-    setFiltre(e.target.value);
+  const dealRandomHand = () => {
+    setAnimating(true);
+    setTimeout(() => {
+      const shuffled = [...allCards].sort(() => 0.5 - Math.random());
+      const random = shuffled.slice(0, 10);
+      setRandomHand(random);
+      setSelectedHand(random);
+      setAnimating(false);
+    }, 500);
+  };
+
+  const saveHand = () => {
+    if (selectedHand.length !== 10) {
+      alert("Ta main doit contenir exactement 10 cartes");
+      return;
+    }
+    localStorage.setItem("selectedHand", JSON.stringify(selectedHand));
+    alert("✅ Main sauvegardée ! Prêt pour l'Arène !");
   };
 
   return (
     <div className="game-container">
-      <Navbar />
-
-      {/* 🔮 Fond animé */}
-      <div className="mystic-background">
-        <div className="mystic-smoke"></div>
-      </div>
-
       <div className="game-page">
-        <h1>Partie en cours</h1>
-        <p>Niveau du joueur : {niveau}</p>
+        <h1>🎴 Sélectionne ta main de combat</h1>
 
-        <StatsPanel stats={stats} />
-        <StoryText />
-
-        <div style={{ margin: "20px 0" }}>
-          <label htmlFor="filtre">Filtrer par catégorie :</label>{" "}
-          <select value={filtre} onChange={handleFiltreChange}>
-            <option value="Toutes">Toutes</option>
-            <option value="Personnages">Personnages</option>
-            <option value="Artefacts">Artefacts</option>
-            <option value="Pouvoirs">Pouvoirs</option>
-            <option value="Événements">Événements</option>
-            <option value="Lieux">Lieux</option>
-          </select>
-        </div>
-
-        <button onClick={dealNewHand} className="deal-button">
+        <button onClick={dealRandomHand} className="deal-button">
           🎲 Distribuer une main aléatoire
         </button>
 
-        <CardHand
-          cards={hand}
-          animating={animating}
-          niveau={niveau}
-          filtre={filtre}
-        />
+        <button
+          onClick={saveHand}
+          className="deal-button"
+          style={{ marginLeft: 10 }}
+        >
+          💾 Valider cette main
+        </button>
 
-        <div className="logo-container">
-          <img src="/logo512.png" alt="Codex Arcana" />
+        <button
+          onClick={() => (window.location.href = "/arena")}
+          className="deal-button"
+          style={{ marginLeft: 10 }}
+        >
+          ⚔️ Combattre dans l’Arène
+        </button>
+
+        <div style={{ marginTop: 20 }}>
+          <h3>🃏 Sélection actuelle ({selectedHand.length}/10)</h3>
+          <div className="card-row">
+            {allCards.map((card, i) => (
+              <div
+                key={i}
+                onClick={() => toggleSelectCard(card)}
+                style={{
+                  border: selectedHand.includes(card)
+                    ? "2px solid gold"
+                    : "2px solid transparent",
+                  borderRadius: "10px",
+                  cursor: "pointer",
+                }}
+              >
+                <CardHand
+                  cards={[card]}
+                  animating={animating}
+                  niveau={1}
+                  filtre={"Toutes"}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

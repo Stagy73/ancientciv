@@ -15,7 +15,7 @@ import AuthenticatedLayout from "./components/AuthenticatedLayout";
 
 import Arena from "./pages/game/Arena";
 import SelectRace from "./pages/game/SelectRace";
-
+import About from "./pages/About";
 function App() {
   return (
     <Router>
@@ -36,6 +36,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/game" element={<Game />} />
           <Route path="/arena" element={<Arena />} />
+          <Route path="/about" element={<About />} />
+
           <Route path="/game/select-race" element={<SelectRace />} />
           <Route path="/browse" element={<BrowseUsers />} />
         </Route>

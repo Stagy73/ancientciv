@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../../components/Navbar";
+
 import CardComponent from "./CardComponent";
 import { loadAllCards } from "./data/cards";
 import "../../styles/game.css";
@@ -161,8 +161,6 @@ const Arena = () => {
 
   return (
     <div className="game-container">
-      <Navbar />
-
       <div className="game-page">
         <h1>⚔️ Arène de Combat</h1>
         <p>Race sélectionnée : {playerRace}</p>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Navbar from "../components/Navbar";
 
 const Home = () => {
   const [user, setUser] = useState(null);
@@ -83,7 +82,6 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
       <div style={{ maxWidth: 700, margin: "0 auto", padding: 20 }}>
         <h1 style={{ fontSize: "2em", textAlign: "center" }}>
           Bienvenue dans <span style={{ color: "#6e44ff" }}>Codex Arcana</span>,{" "}
