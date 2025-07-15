@@ -68,7 +68,6 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
       <div style={{ maxWidth: 700, margin: "0 auto", padding: 20 }}>
         <h1 style={{ fontSize: "2em", textAlign: "center" }}>
           Bienvenue dans <span style={{ color: "#6e44ff" }}>Codex Arcana</span>,{" "}

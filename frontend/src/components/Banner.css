@@ -1,0 +1,14 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 16cm; /* ✅ Hauteur contrôlée */
+  overflow: hidden;
+  padding-top: 60px; /* ✅ Décalage sous Navbar (à ajuster selon la taille) */
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
